@@ -36,7 +36,7 @@ fonte = cv2.FONT_HERSHEY_COMPLEX_SMALL
 imagem = cv2.imread("data\\fotos\\treinamento\\ronald.0.1.jpg")
 
 detectorFaces = dlib.get_frontal_face_detector()
-detectorPontos = dlib.shape_predictor("data\\recursos\\shape_predictor_68_face_landmarks.dat")
+detectorPontos = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
 facesDetectadas = detectorFaces(imagem, 1)
 

@@ -7,7 +7,7 @@ import numpy as np
 
 detectorFaces = dlib.get_frontal_face_detector()
 detectorPontos = dlib.shape_predictor("data\\recursos\\shape_predictor_68_face_landmarks.dat")
-reconhecimentoFacial = dlib.face_recognition_model_v1("data\\recursos\\dlib_face_recognition_resnet_model_v1.dat")
+reconhecimentoFacial = dlib.face_recognition_model_v1("dlib_face_recognition_resnet_model_v1.dat")
 
 indice = {}
 idx = 0
