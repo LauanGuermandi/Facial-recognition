@@ -21,8 +21,10 @@ for arquivo in glob.glob(os.path.join("data\\fotos\\treinamento", "*.jpg")):
 
     if numeroFacesDetectadas > 1:
         print("Há mais de uma face encontrada!")
+        exit(0)
     elif numeroFacesDetectadas < 1:
         print("Nenhuma face encontrada!")
+        exit(0)
 
     # Face é um bounding box
     for face in facesDetectadas:
